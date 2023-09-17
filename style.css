@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&display=swap');
+
+:root{
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Darkdesaturatedcyangraphicdesigntext: hsl(167, 40%, 24%);
+    --Darkbluephotographytext: hsl(198, 62%, 26%);
+    --Darkmoderatecyanfooter: hsl(168, 34%, 41%);
+    --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+};
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+header{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    padding: 2rem;
+    color: var(--White);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > nav{
+    display: flex;
+    gap: 1rem;
+    transform: translateX(-5rem);
+}
+
+header > nav > div{
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: var(--White);
+    color: var(--Verydarkdesaturatedblue);
+}
+
+body{
+    font-size: 18px;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#home{
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home > h1{
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 3rem;
+    transform: translateY(-9rem);
+}
+
+#home > img{
+    transform: translateY(-4rem);
+}
+
+#About{
+    display: flex;
+    width: 100%;
+}
+
+#About > div{
+    width: 50%;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#About > div > div{
+    width: 50%;
+    height: 50%;
+
+}
+
+#About > div > img{
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        background-color: red;
+    }
+}
